@@ -1,0 +1,8 @@
+
+
+
+amelioration :
+message modifier ligne 34 
+
+afficher message 10 par 10
+

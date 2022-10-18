@@ -1,0 +1,17 @@
+
+
+takin:
+fonction gagner
+    else if ((cpt%3)>=1){
+        liste_voisin.psuh(cpt-1);
+    }
+    //dessu
+    else if (cpt>2){
+        liste_voisin.psuh(cpt-3);
+    }
+    else if (cpt<=5){
+        liste_voisin.psuh(cpt+3);
+    }
+
+
+
