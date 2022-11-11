@@ -1,0 +1,21 @@
+
+<html lang="fr">
+<head>
+    <script src='app.js' async></script>
+</head>
+    <body> 
+        <h1>taille de la grille:</h1>
+        <p>pour la page sur les jeux clique ici <a href="jeux.html"> jeux</a></p>
+        <p>pour la page du premier exercice  clique ici <a href="index.html"> page principal</a></p>
+        
+        <input type="text" placeholder="valeur:" id="val">
+        <input  type="button" value="valider" onclick="grille();" />
+        <input  type="button" value="mettre voisin" onclick="voisin();" />
+        <input  type="button" value="valider avec bloquant" onclick="grillebloquante();" />
+        <br>
+        <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;">
+        </canvas>
+        <span id="erreur"></span>
+ 
+    </body>
+</html>
