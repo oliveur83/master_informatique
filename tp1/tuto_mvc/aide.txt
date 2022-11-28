@@ -1,7 +1,11 @@
+pour la connexion administrateur 
+admin -admin 
 
-fichier a faire
-enseigant
+a partir de admin créee tout le reste 
 
-note_cours
+amélioration :
+faire un bouton pour accueil
+faire plus jolie
+ameliorer la fonctionnalité 
 
-page_modifier
+ajout de plusieur note(probleme)

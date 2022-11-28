@@ -6,7 +6,7 @@ if (isset($_POST['data']))
 {
     $sql = "UPDATE login SET mdp = '".$_POST['mdp']."',nbr_login=1 WHERE name='".$_SESSION["login"]."'";
     $results = $db->exec($sql);
-    header('Location: http://localhost/tp1/index.html');
+    header('Location: http://localhost/TP1/etape12/index.php');
     
 }?> 
 

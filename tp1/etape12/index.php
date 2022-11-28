@@ -5,20 +5,20 @@ if(isset($_POST['file']))
 }
  
 ?>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
-    <form method="post" action="index.php">
+<html>
+ <head>
+  <title>connexion</title>
+  <link rel="stylesheet" href="index.css">
+ </head>
+ <body>
+   <h1> connexion</h1>
 
-        <div>
-          <label for="file">Sélectionner le fichier à envoyer</label>
-          <input type="file" id="file" name="file" multiple>
-        </div>
-        <div>
-          <button>Envoyer</button>
-        </div>
-       </form>
-       
+    <form action="form.php" method="post">
+    <p>login<input type="text" name="login" /></p>
+    <p>mot de passe<input type="text" name="mdp" /></p>
+    <input type="hidden" name="page" value='form' >
+    <input type="submit" value="Valider">
+    </form>
+ </body>
+</html>
 </html>

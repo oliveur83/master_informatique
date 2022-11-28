@@ -64,8 +64,6 @@ session_start();
     <h2> modifier un cours </h2>
     <form action="page_modifier.php" method="post">
     <?php
-
-        
         $result = $db->query('SELECT * FROM cours');
         
         echo "<table>";
@@ -75,7 +73,7 @@ session_start();
          echo '<tr><th> '.$row['nom']."</th>";
          echo '<th> '.$row['descriptive']."</th>";
          echo "<th><input type='radio' name='id_cours' value='".$row['id_cours']."'>";
-         echo $row['id_cours'];
+         echo " <input type='hidden' name='cours' value='".$row['id_cours']."' >";
           echo '</th></tr>';
         }
         echo "</table>";

@@ -51,7 +51,6 @@ session_start();
          echo '<th> '.$row['descriptive']."</th>";
          echo "<th><input type='radio' name='id_cours' value='".$row['id_cours']."'>";
 
-         echo $row['id_cours'];
           echo '</th></tr>';
         }
         echo "</table>";

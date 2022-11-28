@@ -25,7 +25,7 @@ function tescours()
 } 
 function inscription()
 {   
-    $db = new SQLite3('tp1.db') ;  
+    $db = new SQLite3('../tp1.db') ;  
     $result = $db->query('SELECT * FROM cours');
     $inscri = [];
     while (($row = $result->fetchArray())) {

@@ -1,8 +1,11 @@
+pour la connexion administrateur 
+admin -admin 
 
+a partir de admin créee tout le reste 
 
+amélioration :
+faire un bouton pour accueil
+faire plus jolie
+ameliorer la fonctionnalité 
 
-amelioration :
-message modifier ligne 34 
-
-afficher message 10 par 10
-
+ajout de plusieur note(probleme)

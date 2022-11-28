@@ -2,7 +2,7 @@
 session_start();
 
 $dt = new \DateTime();
-$db = new SQLite3('tp1.db') ;
+$db = new SQLite3('../tp1.db') ;
       if (isset($_POST['mess']) && $_POST['mess']='1')
     {
        

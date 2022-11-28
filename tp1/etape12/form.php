@@ -20,8 +20,7 @@ while ($row=$result->fetchArray(SQLITE3_ASSOC ))
     if ($row['name']==$_POST['login'] && $row['mdp']==$_POST['mdp'])
         {
             $_SESSION["id_login"]=$row['id_log'];
-            echo $row['mdp'];
-            echo $row['role'];
+
             $var=TRUE;
             $_SESSION["nbr"]=$row['nbr_login'];
             $role=$row['role'];
@@ -37,7 +36,7 @@ if (empty($_POST['login']))
 elseif($_POST['login']=='admin' && $_POST['mdp']=='admin')
 {
     
-    header('Location: http://localhost/tp1/admin.php');
+    header('Location: http://localhost/TP1/etape12/admin.php');
     exit();
 }
 elseif($var==True)
@@ -45,14 +44,14 @@ elseif($var==True)
     echo $_SESSION["nbr"];
     if ($_SESSION["nbr"]==0)
     {
-        header('Location: http://localhost/tp1/modification_code.php');
+        header('Location: http://localhost/TP1/etape12/modification_code.php');
    
     }
     elseif ($role=="eleve"){
-        header('Location: http://localhost/tp1/eleve.php');
+        header('Location: http://localhost/TP1/etape12/eleve.php');
     }
    else{
-    header('Location: http://localhost/tp1/enseignant.php');
+    header('Location: http://localhost/TP1/etape12/enseignant.php');
    }
     exit();
 }

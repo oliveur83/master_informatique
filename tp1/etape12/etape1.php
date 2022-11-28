@@ -37,7 +37,7 @@ $db = new SQLite3('tp1.db') ;
             $results = $db->exec($sql);
             
         }
-        elseif
+        else
         {   ?>     <form action="etape1.php" method="post">
         <input  type="hidden"  name="id_modif" value="<?php echo $_POST['id_modif']?>" />
         <input type="text" name="text_modif_mess" />

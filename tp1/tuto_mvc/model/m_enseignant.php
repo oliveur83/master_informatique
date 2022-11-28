@@ -2,7 +2,7 @@
 session_start();
 /*session is started if you don't write this line can't use $_Session  global variable*/
 
-$db = new SQLite3('tp1.db') ;
+$db = new SQLite3('../tp1.db') ;
 
 if (empty($_POST['cours'])==False)
     {
@@ -31,7 +31,7 @@ elseif(empty($_POST['id'])==False)
 }
 
 function affiche_cours()
-{$db = new SQLite3('tp1.db') ;
+{$db = new SQLite3('../tp1.db') ;
     $result = $db->query('SELECT * FROM cours');
     $tescours = [];
     while (($row = $result->fetchArray())) {

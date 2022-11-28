@@ -11,7 +11,7 @@ session_start();
  <body>
    <h1> mes notes </h1>
 <?php   
-    $db = new SQLite3('tp1.db') ;
+    $db = new SQLite3('../tp1.db') ;
      
   $result = $db->query('SELECT * FROM cours_profil
   inner join cours on cours.id_cours=cours_profil.id_cours
